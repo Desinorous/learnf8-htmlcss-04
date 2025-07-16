@@ -1301,7 +1301,6 @@ a {
 .footer-right {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: ;
     padding: 52px 0 0 129px;
     height: 456px;
     width: 75%;
