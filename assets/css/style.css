@@ -101,7 +101,7 @@ a {
     padding-top: 26px;
 }
 
-.header-fixed{
+.header-fixed {
     position: sticky;
     top: -18px;
     z-index: 1;
