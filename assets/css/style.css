@@ -98,14 +98,21 @@ a {
 
 /* Header */
 .header {
-    height: 100vh;
     padding-top: 26px;
+}
+
+.header-fixed{
+    position: sticky;
+    top: -18px;
+    z-index: 1;
+    backdrop-filter: blur(15px);
 }
 
 .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .header-top ul {
@@ -179,7 +186,7 @@ a {
 }
 
 /* Hero */
-.hero {
+.hero-body {
     padding: 100px 0;
     display: flex;
     justify-content: space-between;
@@ -997,7 +1004,7 @@ a {
     rotate: -45deg;
 }
 
-.pricing-item ul li:nth-child(n+5)::before {
+.pricing-item:not(:last-of-type) ul li:nth-child(n+5)::before {
     border-left: 1px solid #ffc0af;
     border-bottom: 1px solid #ffc0af;
 }
@@ -1212,7 +1219,9 @@ a {
 
 /* footer */
 .footer {
-    padding-top: 36px;
+    margin-top: 36px;
+    padding-bottom: 4px;
+    background: linear-gradient(to right, #FFF6ED 44%, #FFFAF5 44%);
 }
 
 .footer-body {
@@ -1223,12 +1232,10 @@ a {
 
 .footer-left {
     display: flex;
-    width: 615px;
+    width: 37%;
     height: 516px;
     flex-direction: column;
-    background-color: #FFF6ED;
-    padding: 114px 0 0 135px;
-    margin-left: -135px;
+    padding: 114px 0 0 0;
 }
 
 .footer-left label {
@@ -1250,7 +1257,7 @@ a {
 .footer-left label i {
     display: flex;
     top: 0;
-    right: 44%;
+    right: 21%;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -1294,9 +1301,10 @@ a {
 .footer-right {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 52px;
-    width: 524px;
-    height: 400px;
+    grid-column-gap: ;
+    padding: 52px 0 0 129px;
+    height: 456px;
+    width: 75%;
 }
 
 .footer-right h4 {
@@ -1324,7 +1332,7 @@ a {
 
 .copyright {
     position: absolute;
-    bottom: 48px;
+    bottom: 44px;
     right: 43%;
     color: #656689;
     font-size: 1.2rem;
